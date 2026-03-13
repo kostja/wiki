@@ -8,7 +8,7 @@
 | New ALTER SYSTEM parameter `plugin_check_migration_hash` (default: true) allows disabling plugin migration file checksum validation. This allows plugin authors to more easily fix mistakes in migration files. | Новый параметр ALTER SYSTEM `plugin_check_migration_hash` (по умолчанию: true) позволяет отключить проверку контрольной суммы файлов миграции плагинов. Это позволяет авторам плагинов проще исправлять ошибки в файлах миграции. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2296 (docs: https://git.picodata.io/core/picodata/-/issues/2259) |
 | Fixed bizarre row order produced by ORDER BY <uuid> | Исправлена странная последовательность строк, создаваемая оператором ORDER BY <uuid>. | https://git.picodata.io/core/picodata/-/issues/2217 |
 | Fixed a possible state corruption in case picodata crashes after receiving a raft snapshot with a stale schema version. | Исправлена возможная ошибка искажения состояния в случае сбоя picodata после получения снимка Raft с устаревшей версией схемы. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2278 |
-| Fixed TRUNCATE operation for global tables. | Исправлена операция TRUNCATE для глобальных таблиц. | https://git.picodata.io/core/picodata/-/issues/2274 |
+| Fixed TRUNCATE operation for global tables. | Исправлена операция TRUNCATE для глобальных таблиц. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2288, https://git.picodata.io/core/picodata/-/merge_requests/2330 |
 
 РЕЛИЗ
 [25.3.6] - 2025-10-10
