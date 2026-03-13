@@ -5,9 +5,9 @@
 | Описание | Перевод | Ссылки |
 |----------|---------|--------|
 | Instance's which loose ability to apply raft log updates will automatically become Offline. | Экземпляры, потерявшие возможность применять обновления журналов Raft, автоматически перейдут в автономный режим. | https://git.picodata.io/core/picodata/-/issues/2238 |
-| New ALTER SYSTEM parameter `plugin_check_migration_hash` (default: true) allows disabling plugin migration file checksum validation. This allows plugin authors to more easily fix mistakes in migration files. | Новый параметр ALTER SYSTEM `plugin_check_migration_hash` (по умолчанию: true) позволяет отключить проверку контрольной суммы файлов миграции плагинов. Это позволяет авторам плагинов проще исправлять ошибки в файлах миграции. | не найден (docs: https://git.picodata.io/core/picodata/-/issues/2259) |
+| New ALTER SYSTEM parameter `plugin_check_migration_hash` (default: true) allows disabling plugin migration file checksum validation. This allows plugin authors to more easily fix mistakes in migration files. | Новый параметр ALTER SYSTEM `plugin_check_migration_hash` (по умолчанию: true) позволяет отключить проверку контрольной суммы файлов миграции плагинов. Это позволяет авторам плагинов проще исправлять ошибки в файлах миграции. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2296 (docs: https://git.picodata.io/core/picodata/-/issues/2259) |
 | Fixed bizarre row order produced by ORDER BY <uuid> | Исправлена странная последовательность строк, создаваемая оператором ORDER BY <uuid>. | https://git.picodata.io/core/picodata/-/issues/2217 |
-| Fixed a possible state corruption in case picodata crashes after receiving a raft snapshot with a stale schema version. | Исправлена возможная ошибка искажения состояния в случае сбоя picodata после получения снимка Raft с устаревшей версией схемы. | не найден |
+| Fixed a possible state corruption in case picodata crashes after receiving a raft snapshot with a stale schema version. | Исправлена возможная ошибка искажения состояния в случае сбоя picodata после получения снимка Raft с устаревшей версией схемы. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2278 |
 | Fixed TRUNCATE operation for global tables. | Исправлена операция TRUNCATE для глобальных таблиц. | https://git.picodata.io/core/picodata/-/issues/2274 |
 
 РЕЛИЗ
@@ -15,7 +15,7 @@
 
 | Описание | Перевод | Ссылки |
 |----------|---------|--------|
-| Fix compilation error on ARM architecture. | Исправлена ошибка компиляции на архитектуре ARM. | не найден |
+| Fix compilation error on ARM architecture. | Исправлена ошибка компиляции на архитектуре ARM. | нет issue; MR: https://git.picodata.io/core/picodata/-/merge_requests/2317 |
 | Fix erroneous ER_READONLY message in logs when executing TRUNCATE on global tables. | Исправлена ошибка, из-за которой в логах иногда появлялось ошибочное сообщение ER_READONLY при выполнении команды TRUNCATE для глобальных таблиц. | https://git.picodata.io/core/picodata/-/issues/2274 |
 
 РЕЛИЗ
